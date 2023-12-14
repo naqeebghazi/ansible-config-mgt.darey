@@ -8,6 +8,6 @@ This [script](https://github.com/naqeebghazi/ansible-config-mgt.darey/blob/main/
 
 Confirm it's installed:
 
-        ansible --version
+    ansible --version
 
 ![ansibleversion](https://github.com/naqeebghazi/ansible-config-mgt.darey/blob/main/images/ansible-version.png?raw=true)
