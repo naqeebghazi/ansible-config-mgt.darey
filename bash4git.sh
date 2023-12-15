@@ -2,4 +2,4 @@
 git pull
 git add .
 git commit -am 'images'
-git push origin HEAD
+git push
