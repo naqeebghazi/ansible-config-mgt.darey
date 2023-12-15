@@ -1,6 +1,8 @@
 # Jenkins-ansible server
 ssh -i /Users/nghazi/Downloads/ec2-nghazi.pem ubuntu@ec2-13-40-230-180.eu-west-2.compute.amazonaws.com
 
+ssh -i /Users/nghazi/Downloads/ec2-nghazi.pem ubuntu@ec2-3-10-154-231.eu-west-2.compute.amazonaws.com
+
 # Add this line to the end of the ~/.bashrc file:
 export PATH="$PATH:/home/ubuntu/.local/bin"
 # This ensures /home/ubuntu/.local/bin is added as a PATH environment variable.
