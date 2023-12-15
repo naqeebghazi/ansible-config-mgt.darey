@@ -34,3 +34,5 @@ Confirm it's running:
 
     sudo systemctl status jenkins
 
+![](https://github.com/naqeebghazi/ansible-config-mgt.darey/blob/feature/1/images/systemctl.status.Jenkins.png?raw=true)
+
