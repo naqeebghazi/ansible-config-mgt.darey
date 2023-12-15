@@ -32,7 +32,7 @@ On your Ubuntu EC2 instance, install Jenkins:
 
 Follow [link](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu) for updated installatioin instructions
 
-Confirm it's running:
+Confirm Jenkins is running:
 
     sudo systemctl status jenkins
 
