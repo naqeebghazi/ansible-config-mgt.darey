@@ -1,0 +1,54 @@
+---
+- name: update web, nfs and db servers
+  hosts: webservers, nfs, db
+  become: yes
+  tasks:
+    - name: ensure wireshark is at the latest version
+      yum:
+        name: wireshark
+        state: latest
+
+    - name: create directory 'Bengal' and 'Tiger.txt' file
+      file:
+        path: /path/to/Bengal/Tiger.txt
+        state: touch
+      become: yes
+
+    - name: set timezone to GMT
+      timezone:
+        name: GMT
+      become: yes
+
+    - name: run bash script to install Git
+      script:
+        src: /path/to/install_git.sh
+      become: yes
+
+- name: update LB server
+  hosts: lb
+  become: yes
+  tasks:
+    - name: Update apt repo
+      apt: 
+        update_cache: yes
+
+    - name: ensure wireshark is at the latest version
+      apt:
+        name: wireshark
+        state: latest
+
+    - name: create directory 'Bengal' and 'Tiger.txt' file
+      file:
+        path: /path/to/Bengal/Tiger.txt
+        state: touch
+      become: yes
+
+    - name: set timezone to GMT
+      timezone:
+        name: GMT
+      become: yes
+
+    - name: run bash script to install Git
+      script:
+        src: /path/to/install_git.sh
+      become: yes

@@ -1,5 +1,5 @@
 # Jenkins-ansible server
-ssh -i /Users/nghazi/Downloads/ec2-nghazi.pem ubuntu@ec2-13-40-128-171.eu-west-2.compute.amazonaws.com
+ssh -i /Users/nghazi/Downloads/ec2-nghazi.pem ubuntu@ec2-13-40-230-180.eu-west-2.compute.amazonaws.com
 
 # Add this line to the end of the ~/.bashrc file:
 export PATH="$PATH:/home/ubuntu/.local/bin"
@@ -21,4 +21,22 @@ pipx install ansible-core
 # Or just do this:
 sudo apt install ansible
 
+###############
 
+git branch feature/1 
+git checkout feature/1 
+git branch --set-upstream-to origin feature/1  
+git push origin HEAD   
+
+
+
+
+eval $(register-python-argcomplete ansible)
+eval $(register-python-argcomplete ansible-config)
+eval $(register-python-argcomplete ansible-console)
+eval $(register-python-argcomplete ansible-doc)
+eval $(register-python-argcomplete ansible-galaxy)
+eval $(register-python-argcomplete ansible-inventory)
+eval $(register-python-argcomplete ansible-playbook)
+eval $(register-python-argcomplete ansible-pull)
+eval $(register-python-argcomplete ansible-vault)
