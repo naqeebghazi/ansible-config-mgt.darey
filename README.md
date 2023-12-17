@@ -30,7 +30,7 @@ On your Ubuntu EC2 instance, install Jenkins:
     sudo apt-get update
     sudo apt-get install jenkins
 
-Follow [link](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu) for updated installatioin instructions
+Follow [link][2] for updated installatioin instructions
 
 Confirm Jenkins is running:
 
@@ -41,3 +41,4 @@ Confirm Jenkins is running:
 Ensure ssh-agent is functional. Follow this [link][1] for more detailed instrcutions.
 
 [1]: https://www.linode.com/docs/guides/using-ssh-agent/
+[2]: https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
