@@ -45,9 +45,8 @@ Once that's confirmed, you can SSH into your Jenkins server by:
 
 Then cat the file below to confirm your local keys have transferred across:
 
-    ssh 
-
-
+    cat ~/.ssh/authorized_keys
 
 [1]: https://www.linode.com/docs/guides/using-ssh-agent/
 [2]: https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
+
