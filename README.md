@@ -38,3 +38,6 @@ Confirm Jenkins is running:
 
 ![](https://github.com/naqeebghazi/ansible-config-mgt.darey/blob/feature/1/images/systemctl.status.Jenkins.png?raw=true)
 
+Ensure ssh-agent is functional. Follow this [link][1] for more detailed instrcutions.
+
+[1]: https://www.linode.com/docs/guides/using-ssh-agent/
