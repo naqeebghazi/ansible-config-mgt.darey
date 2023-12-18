@@ -1,8 +1,8 @@
 ---
-- name: install and start apache
+-   name: install and start apache
     hosts: dev.ini
-    remote_user: ubuntu
-    become: yes
+        remote_user: ubuntu
+        become: yes
 
     tasks:
         - name: install epel repo
