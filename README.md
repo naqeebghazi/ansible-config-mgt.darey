@@ -54,4 +54,16 @@ Then cat the file below to confirm your local keys have transferred across:
 On the Jenkins Security group, add an inbound rule: TCP, port 8080, custom IPv4 anywhere (or any IPv4 of your choice)
 Go to the Jenkins server Public IP on port 8080. You will see this:
 
-![]()
+![](https://github.com/naqeebghazi/ansible-config-mgt.darey/blob/main/images/jenkins-browser.png?raw=true)
+
+The password for this page can be found at this location in your jenkins server:
+
+    sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+After pasting that password into the browser, you will get this page:
+
+![](https://github.com/naqeebghazi/ansible-config-mgt.darey/blob/main/images/jenkinsbrowser2.png?raw=true)
+
+Click on 'Install suggested plugins' which will then install a series of items, ask to create a new user (enter details) before mmoving to this page:
+
+![](https://github.com/naqeebghazi/ansible-config-mgt.darey/blob/main/images/jenkinshome.png?raw=true)
