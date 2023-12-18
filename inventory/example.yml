@@ -1,13 +1,13 @@
 ---
--   name: install and start apache
-    hosts: dev.ini
-        remote_user: ubuntu
-        become: yes
+- name: install and start apache
+  hosts: dev.ini
+  remote_user: ubuntu
+  become: yes
 
-    tasks:
-        - name: install epel repo
-            yum:
-                name: epel-release
+tasks:
+- name: install epel repo
+  yum:
+    name: epel-release
             become: yes
 
         - name: install python bindings for SELinux
