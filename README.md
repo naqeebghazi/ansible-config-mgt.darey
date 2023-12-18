@@ -51,10 +51,7 @@ Then cat the file below to confirm your local keys have transferred across:
 [2]: https://www.jenkins.io/doc/book/installing/linux/#debianubuntu
 
 
-
-Ensure Jenkins is running:
-
-    sudo systemctl status jenkins
+On the Jenkins Security group, add an inbound rule: TCP, port 8080, custom IPv4 anywhere (or any IPv4 of your choice)
+Go to the Jenkins server Public IP on port 8080. You will see this:
 
 ![]()
-
