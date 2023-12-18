@@ -1,0 +1,38 @@
+---
+- name: install and start apache
+    hosts: dev.ini
+    remote_user: ubuntu
+    become: yes
+
+    tasks:
+        - name: install epel repo
+            yum:
+                name: epel-release
+            become: yes
+
+        - name: install python bindings for SELinux
+            yum:
+                name: "{{ item }}"
+            with_items:
+                - libselinux-python
+                - libsemanage-python
+            become: yes
+
+        - name: test to see if SELinux is running
+            command: getenforce
+            register: sestatus
+            changed_when: false
+            become: yes
+
+        - name: install apache
+            yum:
+                name: httpd
+                state: present
+            become: yes
+
+        - name: start apache
+            service:
+                name: httpd
+                state: started
+                enabled: yes
+            become: yes
