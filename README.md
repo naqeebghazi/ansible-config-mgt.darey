@@ -67,3 +67,8 @@ After pasting that password into the browser, you will get this page:
 Click on 'Install suggested plugins' which will then install a series of items, ask to create a new user (enter details) before mmoving to this page:
 
 ![](https://github.com/naqeebghazi/ansible-config-mgt.darey/blob/main/images/jenkinshome.png?raw=true)
+
+
+
+
+I'm in love with my wife. Alhamdulillah. 
