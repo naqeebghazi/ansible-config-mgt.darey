@@ -68,7 +68,6 @@ Click on 'Install suggested plugins' which will then install a series of items, 
 
 ![](https://github.com/naqeebghazi/ansible-config-mgt.darey/blob/main/images/jenkinshome.png?raw=true)
 
+## Setup of Webhook:
 
-
-
-monkeys and bananas
+When Jenkins receives a GitHub push hook, GitHub Plugin checks to see whether the hook came from a GitHub repository which matches the Git repository defined in SCM/Git section of this job. If they match and this option is enabled, GitHub Plugin triggers a one-time polling on GITScm. When GITScm polls GitHub, it finds that there is a change and initiates a build. The last sentence describes the behavior of Git plugin, thus the polling and initiating the build is not a part of GitHub plugin.
