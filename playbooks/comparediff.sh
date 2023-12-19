@@ -19,3 +19,6 @@ if [ ! -f "$file2" ]; then
 fi
 
 diff "$file1" "$file2"
+
+
+echo 'Hello and Salaam'
